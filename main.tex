@@ -1,0 +1,77 @@
+\documentclass[a4paper, twoside, 12pt, table]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{natbib} 
+
+
+%% Sets page size and margins
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=0pt]{geometry}
+\usepackage{titlesec}
+\usepackage{pdfpages}
+%\usepackage[paper=portrait,pagesize]{typearea}
+%\usepackage{rotating}
+
+%% Useful packages for figures and tables
+\usepackage{amsmath}
+\usepackage{mhchem}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\graphicspath{ {./Figures/} }
+\usepackage{float}
+\usepackage{adjustbox}
+\usepackage{pdflscape}
+
+\setlength {\marginparwidth}{2cm}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{tabularx}
+\usepackage{pdfpages}
+
+\usepackage{lscape}
+\usepackage{multirow}
+%\usepackage[paper=portrait,pagesize]{typearea}
+\usepackage{rotating}
+\usepackage{longtable}
+\usepackage[normalem]{ulem}
+
+%Sart of the document 
+\begin{document}
+
+\begin{titlepage}
+\includepdf[pages=-]{Cover pages/Cover Pages pdf/Cover Page - SAFETY.pdf}
+\end{titlepage}
+
+
+\pagenumbering{roman}
+\tableofcontents
+
+\newpage
+\pagenumbering{arabic}
+
+\input{A. Main Report/1. Introduction}
+\input{A. Main Report/2. Considerations in Process Synthesis}
+\input{A. Main Report/3. Material selection}
+\input{A. Main Report/4. Qualitative risk assessment}
+\input{A. Main Report/5. HAZOP}
+\input{A. Main Report/6. LOPA}
+\input{A. Main Report/7. Plant Layout}
+\input{A. Main Report/8. Environmental Impact}
+\input{A. Main Report/9. Conclusions & Recommendations}
+
+
+\appendix
+\input{B. Appendix/Safety Appendix}
+
+
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{b}
+
+\end{document}
+
+
